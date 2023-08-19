@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Compute the arithmetic mean over all iterated values.
+* Computes the arithmetic mean over all iterated values.
 *
-* @module @stdlib/stats-iter-mean
+* @param iterator - input iterator
+* @returns arithmetic mean
 *
 * @example
-* var runif = require( '@stdlib/random-iter-uniform' );
-* var itermean = require( '@stdlib/stats-iter-mean' );
+* var runif = require( `@stdlib/random/iter/uniform` );
 *
 * var rand = runif( -10.0, 10.0, {
 *     'iter': 100
@@ -34,12 +38,9 @@
 * var m = itermean( rand );
 * // returns <number>
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function itermean( iterator: Iterator ): number | null;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = itermean;
