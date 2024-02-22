@@ -65,7 +65,7 @@ The [arithmetic mean][arithmetic-mean] is defined as
 ## Usage
 
 ```javascript
-import itermean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mean@esm/index.mjs';
+import itermean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mean@v0.2.1-esm/index.mjs';
 ```
 
 #### itermean( iterator )
@@ -112,7 +112,7 @@ var m = itermean( arr );
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itermean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mean@esm/index.mjs';
+import itermean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-mean@v0.2.1-esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
